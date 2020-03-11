@@ -32,7 +32,7 @@ jobs:
           tf_actions_working_dir: "example/examplea"
       - name: Test with Checkov
         run: |
-          pip install checkov=1.0.188
+          pip install checkov==1.0.188
           checkov -d .
   version:
     name: versioning
