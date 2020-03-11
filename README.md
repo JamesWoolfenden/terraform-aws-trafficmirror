@@ -8,6 +8,7 @@
 
 Terraform module - Sets up a VPC traffic mirror
 
+This is for development purposes only.
 ---
 
 It's 100% Open Source and licensed under the [APACHE2](LICENSE).
