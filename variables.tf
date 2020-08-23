@@ -11,14 +11,22 @@ variable "packet_length" {
 
 variable "network_interface_id" {
   type        = string
-  default     = null
+  default     = ""
   description = "Starts with eni-"
+  validation {
+    condition     = var.network_interface_id == "" || length(var.network_interface_id) >= 5 && substr(var.network_interface_id, 0, 4) == "eni-"
+    error_message = "The network_interface_id need to start with \"eni-\"."
+  }
 }
 
 variable "network_load_balancer_arn" {
   type        = string
   default     = ""
   description = "Starts with arn:aws:iam:"
+  validation {
+    condition     = var.network_load_balancer_arn == "" || length(var.network_load_balancer_arn) > 12 && substr(var.network_load_balancer_arn, 0, 12) == "arn:aws:iam:"
+    error_message = "IAM ARN need to start with \"arn:aws:iam:\"."
+  }
 }
 
 variable "session_number" {
@@ -34,7 +42,7 @@ variable "virtual_network_id" {
 
 variable "filter_description" {
   type        = string
-  description = "(optional) describe your variable"
+  description = "A filter_description"
   default     = "traffic mirror filter"
 }
 

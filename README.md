@@ -45,10 +45,10 @@ No requirements.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | common\_tags | This is to help you add tags to your cloud objects | `map` | n/a | yes |
-| filter\_description | (optional) describe your variable | `string` | `"traffic mirror filter"` | no |
+| filter\_description | A filter\_description | `string` | `"traffic mirror filter"` | no |
 | mirror\_session\_description | n/a | `string` | `"traffic mirror session"` | no |
 | mirror\_target\_description | n/a | `string` | `"Mirror Session target"` | no |
-| network\_interface\_id | Starts with eni- | `string` | `null` | no |
+| network\_interface\_id | Starts with eni- | `string` | `""` | no |
 | network\_load\_balancer\_arn | Starts with arn:aws:iam: | `string` | `""` | no |
 | packet\_length | Can be null | `string` | `""` | no |
 | session\_number | Valid values are 1-32766. | `number` | `null` | no |
