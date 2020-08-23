@@ -5,11 +5,12 @@
 [![Build Status](https://github.com/JamesWoolfenden/terraform-aws-trafficmirror/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-trafficmirror)
 [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-trafficmirror.svg)](https://github.com/JamesWoolfenden/terraform-aws-trafficmirror/releases/latest)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
-[![pre-commit](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
+[![checkov](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
 
 Terraform module - Sets up a VPC traffic mirror
 
 This is for development purposes only.
+
 ---
 
 It's 100% Open Source and licensed under the [APACHE2](LICENSE).
@@ -29,6 +30,10 @@ module "trafficmirror" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Requirements
+
+No requirements.
+
 ## Providers
 
 | Name | Version |
@@ -38,13 +43,15 @@ module "trafficmirror" {
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:-----:|
+|------|-------------|------|---------|:--------:|
 | common\_tags | This is to help you add tags to your cloud objects | `map` | n/a | yes |
-| network\_interface\_id | n/a | `string` | `""` | no |
-| network\_load\_balancer\_arn | n/a | `string` | `""` | no |
-| packer\_length | n/a | `string` | `""` | no |
-| packet\_length | n/a | `string` | `""` | no |
-| session\_number | n/a | `string` | `""` | no |
+| filter\_description | (optional) describe your variable | `string` | `"traffic mirror filter"` | no |
+| mirror\_session\_description | n/a | `string` | `"traffic mirror session"` | no |
+| mirror\_target\_description | n/a | `string` | `"Mirror Session target"` | no |
+| network\_interface\_id | Starts with eni- | `string` | `null` | no |
+| network\_load\_balancer\_arn | Starts with arn:aws:iam: | `string` | `""` | no |
+| packet\_length | Can be null | `string` | `""` | no |
+| session\_number | Valid values are 1-32766. | `number` | `null` | no |
 | virtual\_network\_id | n/a | `string` | `""` | no |
 
 ## Outputs
