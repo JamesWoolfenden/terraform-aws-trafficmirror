@@ -1,5 +1,3 @@
-[![Slalom][logo]](https://slalom.com)
-
 # terraform-aws-trafficmirror
 
 [![Build Status](https://github.com/JamesWoolfenden/terraform-aws-trafficmirror/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-trafficmirror)
@@ -30,6 +28,7 @@ module "trafficmirror" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
 ## Requirements
 
 No requirements.
@@ -37,30 +36,30 @@ No requirements.
 ## Providers
 
 | Name | Version |
-|------|---------|
-| aws | n/a |
+| ---- | ------- |
+| aws  | n/a     |
 
 ## Inputs
 
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| common\_tags | This is to help you add tags to your cloud objects | `map` | n/a | yes |
-| filter\_description | A filter\_description | `string` | `"traffic mirror filter"` | no |
-| mirror\_session\_description | n/a | `string` | `"traffic mirror session"` | no |
-| mirror\_target\_description | n/a | `string` | `"Mirror Session target"` | no |
-| network\_interface\_id | Starts with eni- | `string` | `""` | no |
-| network\_load\_balancer\_arn | Starts with arn:aws:iam: | `string` | `""` | no |
-| packet\_length | Can be null | `string` | `""` | no |
-| session\_number | Valid values are 1-32766. | `number` | `null` | no |
-| virtual\_network\_id | n/a | `string` | `""` | no |
+| Name                       | Description                                        | Type     | Default                    | Required |
+| -------------------------- | -------------------------------------------------- | -------- | -------------------------- | :------: |
+| common_tags                | This is to help you add tags to your cloud objects | `map`    | n/a                        |   yes    |
+| filter_description         | A filter_description                               | `string` | `"traffic mirror filter"`  |    no    |
+| mirror_session_description | n/a                                                | `string` | `"traffic mirror session"` |    no    |
+| mirror_target_description  | n/a                                                | `string` | `"Mirror Session target"`  |    no    |
+| network_interface_id       | Starts with eni-                                   | `string` | `""`                       |    no    |
+| network_load_balancer_arn  | Starts with arn:aws:iam:                           | `string` | `""`                       |    no    |
+| packet_length              | Can be null                                        | `string` | `""`                       |    no    |
+| session_number             | Valid values are 1-32766.                          | `number` | `null`                     |    no    |
+| virtual_network_id         | n/a                                                | `string` | `""`                       |    no    |
 
 ## Outputs
 
-| Name | Description |
-|------|-------------|
-| filter | n/a |
-| session | n/a |
-| target | n/a |
+| Name    | Description |
+| ------- | ----------- |
+| filter  | n/a         |
+| session | n/a         |
+| target  | n/a         |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
@@ -84,7 +83,7 @@ Please use the [issue tracker](https://github.com/JamesWoolfenden/terraform-aws-
 
 ## Copyrights
 
-Copyright � 2019-2020 [Slalom, LLC](https://slalom.com)
+Copyright � 2019-2020 James Woolfenden
 
 ## License
 
@@ -93,19 +92,19 @@ Copyright � 2019-2020 [Slalom, LLC](https://slalom.com)
 See [LICENSE](LICENSE) for full details.
 
 Licensed to the Apache Software Foundation (ASF) under one
-or more contributor license agreements.  See the NOTICE file
+or more contributor license agreements. See the NOTICE file
 distributed with this work for additional information
-regarding copyright ownership.  The ASF licenses this file
+regarding copyright ownership. The ASF licenses this file
 to you under the Apache License, Version 2.0 (the
 "License"); you may not use this file except in compliance
-with the License.  You may obtain a copy of the License at
+with the License. You may obtain a copy of the License at
 
 <https://www.apache.org/licenses/LICENSE-2.0>
 
 Unless required by applicable law or agreed to in writing,
 software distributed under the License is distributed on an
 "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-KIND, either express or implied.  See the License for the
+KIND, either express or implied. See the License for the
 specific language governing permissions and limitations
 under the License.
 
@@ -115,12 +114,9 @@ under the License.
 
 [jameswoolfenden_homepage]: https://github.com/jameswoolfenden
 [jameswoolfenden_avatar]: https://github.com/jameswoolfenden.png?size=150
-[logo]: https://gist.githubusercontent.com/JamesWoolfenden/5c457434351e9fe732ca22b78fdd7d5e/raw/15933294ae2b00f5dba6557d2be88f4b4da21201/slalom-logo.png
-[website]: https://slalom.com
 [github]: https://github.com/jameswoolfenden
 [linkedin]: https://www.linkedin.com/in/jameswoolfenden/
 [twitter]: https://twitter.com/JimWoolfenden
-
 [share_twitter]: https://twitter.com/intent/tweet/?text=terraform-aws-trafficmirror&url=https://github.com/JamesWoolfenden/terraform-aws-trafficmirror
 [share_linkedin]: https://www.linkedin.com/shareArticle?mini=true&title=terraform-aws-trafficmirror&url=https://github.com/JamesWoolfenden/terraform-aws-trafficmirror
 [share_reddit]: https://reddit.com/submit/?url=https://github.com/JamesWoolfenden/terraform-aws-trafficmirror
