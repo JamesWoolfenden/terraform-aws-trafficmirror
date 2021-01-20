@@ -32,7 +32,6 @@ module "trafficmirror" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-
 ## Requirements
 
 No requirements.
@@ -40,30 +39,30 @@ No requirements.
 ## Providers
 
 | Name | Version |
-| ---- | ------- |
-| aws  | n/a     |
+|------|---------|
+| aws | n/a |
 
 ## Inputs
 
-| Name                       | Description                                        | Type     | Default                    | Required |
-| -------------------------- | -------------------------------------------------- | -------- | -------------------------- | :------: |
-| common_tags                | This is to help you add tags to your cloud objects | `map`    | n/a                        |   yes    |
-| filter_description         | A filter_description                               | `string` | `"traffic mirror filter"`  |    no    |
-| mirror_session_description | n/a                                                | `string` | `"traffic mirror session"` |    no    |
-| mirror_target_description  | n/a                                                | `string` | `"Mirror Session target"`  |    no    |
-| network_interface_id       | Starts with eni-                                   | `string` | `""`                       |    no    |
-| network_load_balancer_arn  | Starts with arn:aws:iam:                           | `string` | `""`                       |    no    |
-| packet_length              | Can be null                                        | `string` | `""`                       |    no    |
-| session_number             | Valid values are 1-32766.                          | `number` | `null`                     |    no    |
-| virtual_network_id         | n/a                                                | `string` | `""`                       |    no    |
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| common\_tags | This is to help you add tags to your cloud objects | `map` | n/a | yes |
+| filter\_description | A filter\_description | `string` | `"traffic mirror filter"` | no |
+| mirror\_session\_description | n/a | `string` | `"traffic mirror session"` | no |
+| mirror\_target\_description | n/a | `string` | `"Mirror Session target"` | no |
+| network\_interface\_id | Starts with eni- | `string` | `""` | no |
+| network\_load\_balancer\_arn | Starts with arn:aws:iam: | `string` | `""` | no |
+| packet\_length | Can be null | `string` | `""` | no |
+| session\_number | Valid values are 1-32766. | `number` | `null` | no |
+| virtual\_network\_id | n/a | `string` | `""` | no |
 
 ## Outputs
 
-| Name    | Description |
-| ------- | ----------- |
-| filter  | n/a         |
-| session | n/a         |
-| target  | n/a         |
+| Name | Description |
+|------|-------------|
+| filter | n/a |
+| session | n/a |
+| target | n/a |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
