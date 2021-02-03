@@ -46,7 +46,7 @@ No requirements.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| common\_tags | This is to help you add tags to your cloud objects | `map` | n/a | yes |
+| common\_tags | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
 | filter\_description | A filter\_description | `string` | `"traffic mirror filter"` | no |
 | mirror\_session\_description | n/a | `string` | `"traffic mirror session"` | no |
 | mirror\_target\_description | n/a | `string` | `"Mirror Session target"` | no |
