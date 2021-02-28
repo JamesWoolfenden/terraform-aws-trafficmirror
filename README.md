@@ -42,6 +42,18 @@ No requirements.
 |------|---------|
 | aws | n/a |
 
+## Modules
+
+No Modules.
+
+## Resources
+
+| Name |
+|------|
+| [aws_ec2_traffic_mirror_filter](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ec2_traffic_mirror_filter) |
+| [aws_ec2_traffic_mirror_session](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ec2_traffic_mirror_session) |
+| [aws_ec2_traffic_mirror_target](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ec2_traffic_mirror_target) |
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
@@ -63,7 +75,6 @@ No requirements.
 | filter | n/a |
 | session | n/a |
 | target | n/a |
-
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects
