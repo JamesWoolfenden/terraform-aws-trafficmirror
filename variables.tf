@@ -6,7 +6,7 @@ variable "common_tags" {
 variable "packet_length" {
   description = "Can be null"
   type        = string
-  default     = ""
+  default     = "1024"
 }
 
 variable "network_interface_id" {
@@ -31,7 +31,7 @@ variable "network_load_balancer_arn" {
 
 variable "session_number" {
   type        = number
-  default     = null
+  default     = 1
   description = "Valid values are 1-32766."
 }
 
