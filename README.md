@@ -32,15 +32,16 @@ module "trafficmirror" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
 ## Requirements
 
 No requirements.
 
 ## Providers
 
-| Name | Version |
-|------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
+| Name                                             | Version |
+| ------------------------------------------------ | ------- |
+| <a name="provider_aws"></a> [aws](#provider_aws) | n/a     |
 
 ## Modules
 
@@ -48,33 +49,34 @@ No modules.
 
 ## Resources
 
-| Name | Type |
-|------|------|
-| [aws_ec2_traffic_mirror_filter.filter](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ec2_traffic_mirror_filter) | resource |
+| Name                                                                                                                                             | Type     |
+| ------------------------------------------------------------------------------------------------------------------------------------------------ | -------- |
+| [aws_ec2_traffic_mirror_filter.filter](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ec2_traffic_mirror_filter)    | resource |
 | [aws_ec2_traffic_mirror_session.session](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ec2_traffic_mirror_session) | resource |
-| [aws_ec2_traffic_mirror_target.target](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ec2_traffic_mirror_target) | resource |
+| [aws_ec2_traffic_mirror_target.target](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ec2_traffic_mirror_target)    | resource |
 
 ## Inputs
 
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
-| <a name="input_filter_description"></a> [filter\_description](#input\_filter\_description) | A filter\_description | `string` | `"traffic mirror filter"` | no |
-| <a name="input_mirror_session_description"></a> [mirror\_session\_description](#input\_mirror\_session\_description) | n/a | `string` | `"traffic mirror session"` | no |
-| <a name="input_mirror_target_description"></a> [mirror\_target\_description](#input\_mirror\_target\_description) | n/a | `string` | `"Mirror Session target"` | no |
-| <a name="input_network_interface_id"></a> [network\_interface\_id](#input\_network\_interface\_id) | Starts with eni- | `string` | `""` | no |
-| <a name="input_network_load_balancer_arn"></a> [network\_load\_balancer\_arn](#input\_network\_load\_balancer\_arn) | Starts with arn:aws:iam: | `string` | `""` | no |
-| <a name="input_packet_length"></a> [packet\_length](#input\_packet\_length) | Can be null | `string` | `"1024"` | no |
-| <a name="input_session_number"></a> [session\_number](#input\_session\_number) | Valid values are 1-32766. | `number` | `1` | no |
-| <a name="input_virtual_network_id"></a> [virtual\_network\_id](#input\_virtual\_network\_id) | n/a | `string` | `""` | no |
+| Name                                                                                                            | Description                                        | Type       | Default                    | Required |
+| --------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ---------- | -------------------------- | :------: |
+| <a name="input_common_tags"></a> [common_tags](#input_common_tags)                                              | This is to help you add tags to your cloud objects | `map(any)` | n/a                        |   yes    |
+| <a name="input_filter_description"></a> [filter_description](#input_filter_description)                         | A filter_description                               | `string`   | `"traffic mirror filter"`  |    no    |
+| <a name="input_mirror_session_description"></a> [mirror_session_description](#input_mirror_session_description) | n/a                                                | `string`   | `"traffic mirror session"` |    no    |
+| <a name="input_mirror_target_description"></a> [mirror_target_description](#input_mirror_target_description)    | n/a                                                | `string`   | `"Mirror Session target"`  |    no    |
+| <a name="input_network_interface_id"></a> [network_interface_id](#input_network_interface_id)                   | Starts with eni-                                   | `string`   | `""`                       |    no    |
+| <a name="input_network_load_balancer_arn"></a> [network_load_balancer_arn](#input_network_load_balancer_arn)    | Starts with arn:aws:iam:                           | `string`   | `""`                       |    no    |
+| <a name="input_packet_length"></a> [packet_length](#input_packet_length)                                        | Can be null                                        | `string`   | `"1024"`                   |    no    |
+| <a name="input_session_number"></a> [session_number](#input_session_number)                                     | Valid values are 1-32766.                          | `number`   | `1`                        |    no    |
+| <a name="input_virtual_network_id"></a> [virtual_network_id](#input_virtual_network_id)                         | n/a                                                | `string`   | `""`                       |    no    |
 
 ## Outputs
 
-| Name | Description |
-|------|-------------|
-| <a name="output_filter"></a> [filter](#output\_filter) | n/a |
-| <a name="output_session"></a> [session](#output\_session) | n/a |
-| <a name="output_target"></a> [target](#output\_target) | n/a |
+| Name                                                     | Description |
+| -------------------------------------------------------- | ----------- |
+| <a name="output_filter"></a> [filter](#output_filter)    | n/a         |
+| <a name="output_session"></a> [session](#output_session) | n/a         |
+| <a name="output_target"></a> [target](#output_target)    | n/a         |
+
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects
@@ -97,7 +99,7 @@ Please use the [issue tracker](https://github.com/JamesWoolfenden/terraform-aws-
 
 ## Copyrights
 
-Copyright © 2019-2021 James Woolfenden
+Copyright © 2019-2022 James Woolfenden
 
 ## License
 
