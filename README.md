@@ -1,13 +1,11 @@
 # terraform-aws-trafficmirror
 
-[![Build Status](https://github.com/JamesWoolfenden/terraform-aws-trafficmirror/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-trafficmirror)
+[![Build Status](https://github.com/JamesWoolfenden/terraform-aws-trafficmirror/workflows/Verify/badge.svg?branch=main)](https://github.com/JamesWoolfenden/terraform-aws-trafficmirror)
 [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-trafficmirror.svg)](https://github.com/JamesWoolfenden/terraform-aws-trafficmirror/releases/latest)
 [![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/JamesWoolfenden/terraform-aws-trafficmirror.svg?label=latest)](https://github.com/JamesWoolfenden/terraform-aws-trafficmirror/releases/latest)
 ![Terraform Version](https://img.shields.io/badge/tf-%3E%3D0.14.0-blue.svg)
-[![Infrastructure Tests](https://www.bridgecrew.cloud/badges/github/JamesWoolfenden/terraform-aws-trafficmirror/cis_aws)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=JamesWoolfenden%2Fterraform-aws-trafficmirror&benchmark=CIS+AWS+V1.2)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 [![checkov](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
-[![Infrastructure Tests](https://www.bridgecrew.cloud/badges/github/jameswoolfenden/terraform-aws-trafficmirror/general)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=JamesWoolfenden%2Fterraform-aws-trafficmirror&benchmark=INFRASTRUCTURE+SECURITY)
 
 Terraform module - Sets up a VPC traffic mirror
 
@@ -39,7 +37,7 @@ No requirements.
 ## Providers
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
 
 ## Modules
@@ -49,7 +47,7 @@ No modules.
 ## Resources
 
 | Name | Type |
-|------|------|
+| ---- | ---- |
 | [aws_ec2_traffic_mirror_filter.filter](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ec2_traffic_mirror_filter) | resource |
 | [aws_ec2_traffic_mirror_session.session](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ec2_traffic_mirror_session) | resource |
 | [aws_ec2_traffic_mirror_target.target](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ec2_traffic_mirror_target) | resource |
@@ -57,7 +55,7 @@ No modules.
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
 | <a name="input_filter_description"></a> [filter\_description](#input\_filter\_description) | A filter\_description | `string` | `"traffic mirror filter"` | no |
 | <a name="input_mirror_session_description"></a> [mirror\_session\_description](#input\_mirror\_session\_description) | n/a | `string` | `"traffic mirror session"` | no |
@@ -71,7 +69,7 @@ No modules.
 ## Outputs
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 | <a name="output_filter"></a> [filter](#output\_filter) | n/a |
 | <a name="output_session"></a> [session](#output\_session) | n/a |
 | <a name="output_target"></a> [target](#output\_target) | n/a |
